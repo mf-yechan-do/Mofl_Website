@@ -6,11 +6,7 @@ import { Container } from "../../styles/globals";
 export default class Intro extends Component {
   render() {
     return (
-      <section
-        css={`
-          padding: 90px 0px;
-        `}
-      >
+      <Section>
         <Container>
           <Title as="h4" css="color: #000;">
             We are creative digital marketing agency with expertise to grow any
@@ -32,11 +28,7 @@ export default class Intro extends Component {
               <Flexbox>
                 <Item>
                   <div>
-                    <h4
-                      css={`
-                        color: #635cdb !important;
-                      `}
-                    >
+                    <h4>
                       01.
                     </h4>
                     <h5>Management</h5>
@@ -100,10 +92,14 @@ export default class Intro extends Component {
             </Right>
           </Contents>
         </Container>
-      </section>
+      </Section>
     );
   }
 }
+
+const Section = styled.section`
+padding: 90px 0px;
+`;
 
 const Title = styled.div`
   text-align: center;
