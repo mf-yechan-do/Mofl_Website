@@ -19,11 +19,7 @@ export default function Footer() {
           </i>
         </h6>
         <Level>
-          <div
-            css={{
-              "margin-top": "20px;",
-            }}
-          >
+          <div>
             <Image
               src="/mofl_logo.png"
               alt="mofl logo"
@@ -75,5 +71,8 @@ const Level = styled.div`
   width: 100%;
   p {
     line-height: 19px;
+  }
+  img {
+    padding-top: 20px !important;
   }
 `;

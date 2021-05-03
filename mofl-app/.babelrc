@@ -12,6 +12,12 @@
           "fileName": true, 
           "pure": true
         }
-      ]
+      ],[
+        "@babel/plugin-proposal-decorators", 
+        { 
+          "legacy": true 
+          }
+        ] 
     ]
+    
   }

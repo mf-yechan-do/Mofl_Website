@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { inject, observer } from "mobx-react";
 
+@inject("store")
+@observer
 export default class Banner extends Component {
   render() {
     return (
       <Background>
         <Content>
-          <p>mofl</p>
+          <p>{this.props.store.title}</p>
           <h1>
             AI-Based Economics<br></br> Solving Firm
           </h1>
