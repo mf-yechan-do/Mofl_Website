@@ -4,11 +4,12 @@ import { GlobalStyle } from "../styles/globals";
 import Head from "next/head";
 import { AppProps } from "next/app";
 import { Provider } from "mobx-react";
-import Store from "../store";
+import { useStore } from "../store";
 
 function MyApp({ Component, pageProps }: AppProps) {
+  const store = useStore(pageProps.initialState);
   return (
-    <Provider store={Store}>
+    <Provider store={store}>
       <Head>
         <link rel="icon" href="/favicon 16x16.ico" />
         <title>mofl Inc.</title>
