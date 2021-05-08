@@ -57,7 +57,7 @@ export function initializeStore(snapshot = null) {
   const _store = store ?? Store.create({
     count: 0,
     content_id: 0,
-      mode: "read",
+      mode: "welcome",
       title: "mofl",
       name: "reswr",
       desc: "desc",
@@ -66,9 +66,9 @@ export function initializeStore(snapshot = null) {
       ],
       welcome: [{title:"Welcome", sub:"Hello, React!!"}],
       content: [
-        {id:1, name:"HTML", desc:"HyperText Markup Language"},
-        {id:2, name:"CSS", desc:"Cascading Style Sheets"},
-        {id:3, name:"JavaScript", desc:"객체(object) 기반의 스크립트 언어입니다"}
+        {id:0, name:"HTML", desc:"HyperText Markup Language"},
+        {id:1, name:"CSS", desc:"Cascading Style Sheets"},
+        {id:2, name:"JavaScript", desc:"객체(object) 기반의 스크립트 언어입니다"}
       ]
       
     });
