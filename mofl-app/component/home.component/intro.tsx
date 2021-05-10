@@ -28,9 +28,7 @@ export default class Intro extends Component {
               <Flexbox>
                 <Item>
                   <div>
-                    <h4>
-                      01.
-                    </h4>
+                    <h4>01.</h4>
                     <h5>Management</h5>
                     <p>
                       we founded September with the goal of creating meaningful
@@ -98,7 +96,7 @@ export default class Intro extends Component {
 }
 
 const Section = styled.section`
-padding: 90px 0px;
+  padding: 90px 0px;
 `;
 
 const Title = styled.div`

@@ -4,14 +4,18 @@ import SubBanner from "../component/sub.banner";
 import Control from "../component/control";
 import { inject, observer } from "mobx-react";
 import { unprotect } from "mobx-state-tree";
-import Link from "next/link";
 import ReadContent from "../component/career.component/readcontent";
 import CreateContent from "../component/career.component/createcontent";
 import UpdateContent from "../component/career.component/updatecontent";
+import { IStore } from "../store";
+
+type Props = {
+  store?: IStore;
+};
 
 @inject("store")
 @observer
-class Career extends Component {
+class Career extends Component<Props> {
   render() {
     const { store } = this.props;
     unprotect(store);
@@ -24,28 +28,28 @@ class Career extends Component {
     while (i < store.content.length) {
       const id = store.content[i].id;
       const content_id = store.content_id;
-      if ( id !== content_id) {
-      list.push(
-        <li
-          key={store.content[i].id}
-          onClick={() => {
-            store.Content_id(id);
-          }}
-        >  
-          <Pointer>{store.content[i].name}</Pointer>
-        </li>
-      );
-    } else {
-      list.push(
-        <li
-          key={store.content[i].id}
-          onClick={() => {
-            store.Content_id(id);
-          }}
-        >  
-          <Pointer2>{store.content[i].name}</Pointer2>
-        </li>
-      );
+      if (id !== content_id) {
+        list.push(
+          <li
+            key={store.content[i].id}
+            onClick={() => {
+              store.Content_id(id);
+            }}
+          >
+            <Pointer>{store.content[i].name}</Pointer>
+          </li>
+        );
+      } else {
+        list.push(
+          <li
+            key={store.content[i].id}
+            onClick={() => {
+              store.Content_id(id);
+            }}
+          >
+            <Pointer2>{store.content[i].name}</Pointer2>
+          </li>
+        );
       }
       i = i + 1;
     }
@@ -75,10 +79,10 @@ class Career extends Component {
 
     const control = () => {
       if (store.mode === "create") {
-        const _article = <CreateContent  ></CreateContent>;
+        const _article = <CreateContent></CreateContent>;
         return _article;
-      } else if(store.mode === "update") {
-        const _article = <UpdateContent  ></UpdateContent>;
+      } else if (store.mode === "update") {
+        const _article = <UpdateContent></UpdateContent>;
         return _article;
       }
     };
@@ -102,11 +106,9 @@ class Career extends Component {
             >
               {/* <Pointer>Welcome</Pointer> */}
             </div>
-            <ul>
-              {list}
-            </ul>
+            <ul>{list}</ul>
             <div style={{ height: "20px" }}></div>
-              {list2}
+            {list2}
             {/* {content()} */}
             <div style={{ height: "20px" }}></div>
           </div>
@@ -132,10 +134,10 @@ const Center = styled.div`
 `;
 
 const Pointer = styled.span`
-  cursor:pointer;
+  cursor: pointer;
 `;
 const Pointer2 = styled.span`
-  cursor:pointer;
+  cursor: pointer;
   font-weight: bold;
   color: #117d24;
 `;

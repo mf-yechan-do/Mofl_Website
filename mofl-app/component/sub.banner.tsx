@@ -1,9 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { inject, observer } from "mobx-react";
+import { observer } from "mobx-react";
+
+type Props = {
+  title: string;
+};
 
 @observer
-export default class SubBanner extends Component {
+export default class SubBanner extends Component<Props> {
   render() {
     return (
       <Banner>

@@ -1,9 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { inject, observer } from "mobx-react";
+import { observer } from "mobx-react";
+
+type Props = {
+  title: string;
+  desc: string;
+};
 
 @observer
-class ReadContent extends Component {
+class ReadContent extends Component<Props> {
   render() {
     return (
       <>

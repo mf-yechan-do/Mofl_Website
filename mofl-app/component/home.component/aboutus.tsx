@@ -97,7 +97,6 @@ const Section = styled.section`
 `;
 
 const Flexbox = styled.div((props) => ({
-  display: "-ms-flexbox",
   display: "flex",
   flexWrap: "wrap",
 }));

@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { inject, observer } from "mobx-react";
+import { IStore } from "../../store";
 
+type Props = {
+  store?: IStore;
+};
 @inject("store")
 @observer
-export default class Banner extends Component {
+export default class Banner extends Component<Props> {
   render() {
     return (
       <Background>

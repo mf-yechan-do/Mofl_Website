@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { types, applySnapshot } from "mobx-state-tree";
+import { types, applySnapshot, Instance } from "mobx-state-tree";
 
 let store;
 
@@ -53,6 +53,8 @@ const Store = types
     return { plus, del, onChangeMode, Content_id};
   });
 
+  export type IStore = Instance<typeof Store>
+  
 export function initializeStore(snapshot = null) {
   const _store = store ?? Store.create({
     count: 0,
