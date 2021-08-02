@@ -13,8 +13,8 @@ export default function Top() {
               priority
               src="/mofl_logo.png"
               alt="mofl logo"
-              width={50}
-              height={50}
+              width={64} 
+              height={57}
             />
           </a>
         </Link>
@@ -51,7 +51,7 @@ export default function Top() {
 }
 
 const Header = styled.header`
-  height: 90px;
+  height: 97px;
   padding: 20px 0px 20px 0px;
   position: fixed;
   width: 100%;
@@ -63,7 +63,7 @@ const Nav = styled.nav`
   right: 0;
   top: 0;
   display: flex;
-  height: 50px;
+  height: 57px;
   align-items: center;
   li {
     list-style: none;

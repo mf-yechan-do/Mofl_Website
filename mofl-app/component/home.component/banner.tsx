@@ -16,7 +16,7 @@ export default class Banner extends Component<Props> {
           <p>AI-Based Economics Solving Firm</p>
           <h1>
           We provide comprehensive machine learning platforms<br></br>
-that supports critical decisions from demand forecast to supply optimization
+          that supports critical decisions from demand forecast to supply optimization
           </h1>
           <h6>
             Demand &amp; supply optimization<br></br>*Tackling Inefficiency :
