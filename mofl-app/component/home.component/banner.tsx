@@ -13,9 +13,10 @@ export default class Banner extends Component<Props> {
     return (
       <Background>
         <Content>
-          <p>{this.props.store.title}</p>
+          <p>AI-Based Economics Solving Firm</p>
           <h1>
-            AI-Based Economics<br></br> Solving Firm
+          We provide comprehensive machine learning platforms<br></br>
+that supports critical decisions from demand forecast to supply optimization
           </h1>
           <h6>
             Demand &amp; supply optimization<br></br>*Tackling Inefficiency :
@@ -49,7 +50,7 @@ const Content = styled.div`
   p {
     font-weight: 400;
     color: #fff;
-    background: #635cdb;
+    background: #D2A75D;
     display: inline-block;
     padding: 3px 8px;
     text-transform: uppercase;
