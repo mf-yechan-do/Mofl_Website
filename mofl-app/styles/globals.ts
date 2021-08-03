@@ -1,7 +1,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const Container = styled.div`
-  width: 1140px;
+  width: 1180px;
   margin: 0 auto;
   position: relative;
 `;

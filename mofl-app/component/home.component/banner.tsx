@@ -15,8 +15,9 @@ export default class Banner extends Component<Props> {
         <Content>
           <p>AI-Based Economics Solving Firm</p>
           <h1>
-          We provide comprehensive machine learning platforms<br></br>
-          that supports critical decisions from demand forecast to supply optimization
+          We optimize :<br></br>
+          "The best certainty out of the extreme uncertainty“​<br></br>
+          via time-series forecasting​
           </h1>
           <h6>
             Demand &amp; supply optimization<br></br>*Tackling Inefficiency :
@@ -42,6 +43,9 @@ const Background = styled.div`
 `;
 const Content = styled.div`
   padding: 250px 0px 180px;
+  width: 1180px;
+  margin: auto;
+  text-align: left;
   h1 {
     color: #fff;
     font-weight: 700;

@@ -9,8 +9,8 @@ export default class Intro extends Component {
       <Section>
         <Container>
           <Title as="h4" css="color: #000;">
-            We are creative digital marketing agency with expertise to grow any
-            business that need proper guidance and a committed service.
+          We provide  comprehensive AI platforms  that supports critical decisions​​<br></br>
+          from demand forecast to supply optimization​
           </Title>
           <Contents>
             <Flexbox>
@@ -101,8 +101,8 @@ const Section = styled.section`
 
 const Title = styled.div`
   text-align: center;
-  width: 70%;
   margin: 40px auto 60px;
+  text-align: left;
   line-height: 40px;
 `;
 const Contents = styled.div`
