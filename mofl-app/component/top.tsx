@@ -3,6 +3,11 @@ import Link from "next/link";
 import { Container } from "../styles/globals";
 import styled from "styled-components";
 
+  function ontoggle() {
+    console.log('The link was clicked.');
+    document.getElementById("hiring").style.display ="none";
+  }
+
 export default function Top() {
   return (
     <Header>
@@ -46,9 +51,63 @@ export default function Top() {
           </ul>
         </Nav>
       </Container>
+      
+      <Hiring id="hiring">
+      
+    <div>
+    <a href="https://www.notion.so/Job-Description-e9b85447e6e14000b492dc84384bbb3b">
+      <h1>We are Hiring</h1>
+      <p>Join our team and make the world with "sustainable &amp; optimized economy" &nbsp; →</p>
+    </a>
+      <span onClick={ontoggle}>X</span>
+      </div>
+  </Hiring>
     </Header>
   );
 }
+
+
+ const Hiring = styled.section`
+position: absolute;
+top: 97px;
+left: 0;
+width: 100%;
+background-color: #49597d;
+padding: 20px 0px; 
+
+div {
+  width: 1180px;
+  margin: 0 auto;
+  position: relative;
+}
+
+span {
+  display: inline-block;
+  color: #fff;
+  font-size: 1.6em;
+  top: 13px;
+  position: absolute;
+  right: 0px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+h1 {
+  color: rgb(40,242,245);
+  width: 850px;
+  margin: 0px;
+  font-weight: bold;
+  font-size: 1.25em;
+  display: inline-block;
+}
+p {
+  color: #fff;
+  width: 850px;
+  margin: 0px;
+  font-size: 1.2em;
+  display: inline-block;
+}
+`;
 
 const Header = styled.header`
   height: 97px;

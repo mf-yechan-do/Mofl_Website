@@ -6,63 +6,84 @@ import { Container } from "../../styles/globals";
 export default class Intro extends Component {
   render() {
     return (
+      <div>
+        
+        <div style={{backgroundColor: "rgb(28 48 92)"}}>
+      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+     width="1180" height="auto" autoPlay muted loop  >
+      <source src="/images/1page.mp4" type="video/mp4"/>
+      </video>
+      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+     width="1180" height="auto" autoPlay muted loop  >
+      <source src="/images/2page.mp4" type="video/mp4"/>
+      </video>
+      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+     width="1180" height="auto" autoPlay muted loop  >
+      <source src="/images/3page.mp4" type="video/mp4"/>
+      </video>
+      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+     width="1180" height="auto" autoPlay muted loop  >
+      <source src="/images/4page.mp4" type="video/mp4"/>
+      </video>
+      </div>
       <Section>
         <Container>
           <Title as="h4" css="color: #000;">
-          We provide  comprehensive AI platforms  that supports critical decisions​​<br></br>
-          from demand forecast to supply optimization​
+          We provide comprehensive AI platforms that supports critical<br></br>
+           decisions​​ from demand forecast to supply optimization​
           </Title>
           <Contents>
             <Flexbox>
               <MarginTop>
+                <div>
                 <Image
                   src="/images/why-choose.png"
-                  alt="introimg"
-                  width={445}
-                  height={555}
+                  alt="mockup"
+                  width={448}
+                  height={348}
                   layout="intrinsic"
                 />
+                </div>
               </MarginTop>
-            </Flexbox>
+            </Flexbox> 
             <Right>
               <Flexbox>
                 <Item>
                   <div>
                     <h4>01.</h4>
-                    <h5>Management</h5>
+                    <h5>Structure</h5>
                     <p>
-                      we founded September with the goal of creating meaningful
-                      digital experiences that connect with people.
+                    We provide full-service from data organization to external data
+                    integration for advanced analysis
                     </p>
                   </div>
                 </Item>
                 <Item>
                   <div>
                     <h4>02.</h4>
-                    <h5>Strategy</h5>
+                    <h5>Preciseness</h5>
                     <p>
-                      We’re full service which means we’ve got you covered on
-                      design &amp; content right through to digital.
+                    Running data consistency check thoroughly and cleanse &amp; 
+                    impute data based on the client’s goal.
                     </p>
                   </div>
                 </Item>
                 <Item>
                   <div>
                     <h4>03.</h4>
-                    <h5>Experience</h5>
+                    <h5>Forecasting</h5>
                     <p>
-                      You’ll form a lasting relationship with us, collaboration
-                      is central to we do.Digital experiences connect people.
+                    Our unique value comes from the most precise forecasting service based on cutting-edge AI.
                     </p>
                   </div>
                 </Item>
                 <Item>
                   <div>
                     <h4>04.</h4>
-                    <h5>Build</h5>
+                    <h5>Application</h5>
                     <p>
-                      Technology and design are the core of success for real
-                      estate related businesses. Leverage our years.
+                    We suggest the best fit demand-supply optimization for our 
+                    clients ; From inventory to promotion.
                     </p>
                   </div>
                 </Item>
@@ -70,7 +91,7 @@ export default class Intro extends Component {
               <div>
                 <div>
                   <div>
-                    <ContactUs>
+                    {/*<ContactUs>
                       Still have any question on mind?{" "}
                       <ContactUs
                         black
@@ -83,7 +104,7 @@ export default class Intro extends Component {
                       >
                         Contact us
                       </ContactUs>
-                    </ContactUs>
+                      </ContactUs>*/}
                   </div>
                 </div>
               </div>
@@ -91,6 +112,7 @@ export default class Intro extends Component {
           </Contents>
         </Container>
       </Section>
+      </div>
     );
   }
 }
@@ -102,7 +124,6 @@ const Section = styled.section`
 const Title = styled.div`
   text-align: center;
   margin: 40px auto 60px;
-  text-align: left;
   line-height: 40px;
 `;
 const Contents = styled.div`
@@ -110,6 +131,10 @@ const Contents = styled.div`
 `;
 const MarginTop = styled.div`
   margin-top: 45px;
+  
+  div {
+    padding-top: 15px;
+}
 `;
 const Right = styled.div`
   -ms-flex: 0 0 55%;
