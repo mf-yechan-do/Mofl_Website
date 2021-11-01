@@ -9,22 +9,20 @@ export default class Intro extends Component {
       <div>
         
         <div style={{backgroundColor: "rgb(28 48 92)"}}>
-      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+      <Video   style={{ paddingTop: "200px"}}
      width="1180" height="auto" autoPlay muted loop  >
       <source src="/images/1page.mp4" type="video/mp4"/>
-      </video>
-      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+      </Video>
+      <Video  
      width="1180" height="auto" autoPlay muted loop  >
       <source src="/images/2page.mp4" type="video/mp4"/>
-      </video>
-      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+      </Video> <Video  
      width="1180" height="auto" autoPlay muted loop  >
       <source src="/images/3page.mp4" type="video/mp4"/>
-      </video>
-      <video  style={{display: "block", margin: "0 auto", padding: "200px 0px"}}
+      </Video> <Video   style={{ paddingBottom: "200px"}}
      width="1180" height="auto" autoPlay muted loop  >
       <source src="/images/4page.mp4" type="video/mp4"/>
-      </video>
+      </Video>
       </div>
       <Section>
         <Container>
@@ -117,8 +115,13 @@ export default class Intro extends Component {
   }
 }
 
+const Video = styled.video`
+display: block;
+margin: 0 auto;
+padding: 100px 0px;
+`;
 const Section = styled.section`
-  padding: 90px 0px;
+  padding: 90px 0px 130px 0px;
 `;
 
 const Title = styled.div`
