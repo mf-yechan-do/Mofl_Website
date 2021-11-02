@@ -12,8 +12,8 @@ export default class SubBanner extends Component<Props> {
     return (
       <Banner>
         <Content>
-          <h1>{this.props.title}</h1>
-          <p>text</p>
+          <h1>Job Description</h1>
+          <p>Engineers / Researchers / Business Development</p>
         </Content>
       </Banner>
     );

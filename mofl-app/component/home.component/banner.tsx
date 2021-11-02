@@ -47,7 +47,7 @@ const Content = styled.div`
   margin: auto;
   text-align: left;
   h1 {
-    color: #fff;
+    color: #eeeeee;
     font-weight: 700;
     line-height: 50px;
   }

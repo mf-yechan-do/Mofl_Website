@@ -28,12 +28,12 @@ export default function Top() {
             <li>
               <Link href="/">HOME</Link>
             </li>
-            <li>
+            {/*<li>
               <Link href="/about">ABOUT</Link>
             </li>
             <li>
               <Link href="/service">SERVICE</Link>
-            </li>
+            </li>*/}
             <li>
               <Link href="/career">CAREER</Link>
             </li>
@@ -45,9 +45,9 @@ export default function Top() {
             >
               <Link href="/">BLOG</Link>
             </li>
-            <li>
+            {/*<li>
               <Link href="/contact">CONTACT</Link>
-            </li>
+            </li>*/}
           </ul>
         </Nav>
       </Container>

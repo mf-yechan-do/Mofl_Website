@@ -12,6 +12,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 html,
 body {
+  min-width: 1180px;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;

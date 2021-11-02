@@ -89,6 +89,13 @@ class Career extends Component<Props> {
 
     return (
       <>
+      <Bg>
+        <SubBanner title="Career Page" />
+      </Bg>
+      <embed type="text/html" src="https://www.notion.so/Job-Description-e9b85447e6e14000b492dc84384bbb3b" width="500" height="200"></embed>
+
+      {/* 
+      <>
         <Bg>
           <SubBanner title="Career Page" />
         </Bg>
@@ -104,19 +111,20 @@ class Career extends Component<Props> {
                 store.Content_id(0);
               }}
             >
-              {/* <Pointer>Welcome</Pointer> */}
+              * <Pointer>Welcome</Pointer> *
             </div>
             <ul>{list}</ul>
             <div style={{ height: "20px" }}></div>
             {list2}
-            {/* {content()} */}
+            * {content()} *
             <div style={{ height: "20px" }}></div>
           </div>
           <Control></Control>
           {control()}
         </Center>
         <div style={{ height: "1000px" }}></div>
-      </>
+      </>*/}
+           </>
     );
   }
 }
@@ -124,9 +132,11 @@ class Career extends Component<Props> {
 export default Career;
 
 const Bg = styled.div`
-  background-image: url(/images/sub_background_3.jpg);
+  background-image: url(/images/background.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: right bottom;
+  background-color: #1b305c;
+
 `;
 
 const Center = styled.div`

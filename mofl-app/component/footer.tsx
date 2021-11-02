@@ -19,8 +19,8 @@ export default function Footer() {
           </i>
         </h6>
         <Level>
-          <div>
-            <div>
+            <Flex>
+              <div>
               <p>
               <span>Daejeon, Korea</span>
               <br /><div style={{height: "10px"}}></div>
@@ -28,25 +28,26 @@ export default function Footer() {
                 <br />
                 Daejeon, Republic of Korea
               </p>
+              </div>
+
+              <div>
               <p>
-              
               <span>Daejeon, Korea(Research Institute)</span>
               <br /><div style={{height: "10px"}}></div>
               504, 99, Daehak-ro, Yuseong-gu, 
               <br />
                 Daejeon, Republic of Korea
-              </p>
+              </p></div>
+              <div>
               <p>
-
               <span>Seoul, Korea</span>
               <br /><div style={{height: "10px"}}></div>
                 1412-3 ,16, Maeheon-ro, Seocho-gu, 
               <br />
                   Seoul, Republic of Korea
               </p>
-            </div>
-          </div>
-          
+              </div>
+            </Flex>
         </Level>
           <div style={{paddingTop: "100px"}}>
             <Image
@@ -83,25 +84,28 @@ const FooterBox = styled.footer`
 `;
 
 const Level = styled.div`
-  display: flex;
-  justify-content: space-between;
   border-top: 1px solid rgba(255, 255, 255, 0.5);
   padding: 40px 0px;
   width: 100%;
-  p {
-    line-height: 19px;
-  }
   img {
     padding-top: 20px !important;
   }
 
-  div {
-    display: flex;
-    width: 100%;
-    min-width: 1180px;
-}
-p {width: 33.3%;}
+`;
+const Flex = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1180px;.
+  
 span {
   font-weight: 700;
 }
+  p {
+    line-height: 19px;    
+    width: 380px
+;
+  }
+
 `;
+
