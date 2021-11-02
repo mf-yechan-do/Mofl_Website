@@ -35,7 +35,7 @@ export default function Top() {
               <Link href="/service">SERVICE</Link>
             </li>*/}
             <li>
-              <Link href="/career">CAREER</Link>
+              <Link href="/my-post">CAREER</Link>
             </li>
             <li
               onClick={function (e) {

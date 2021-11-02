@@ -31,7 +31,7 @@ const Banner = styled.div`
 const Content = styled.div`
   padding: 250px 0px 180px;
   h1 {
-    color: #fff;
+    color: #eee;
     font-weight: 700;
     line-height: 50px;
   }
