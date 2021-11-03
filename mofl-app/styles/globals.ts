@@ -10,6 +10,10 @@ export const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
 }
+
+.notion-page {
+  width: 900px !important;
+}
 html,
 body {
   min-width: 1180px;

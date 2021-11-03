@@ -8,7 +8,7 @@ import 'rc-dropdown/assets/index.css'
 // used for rendering equations (optional)
 import 'katex/dist/katex.min.css'
 import React from 'react';
-import { NotionRenderer } from 'react-notion-x';
+import { Collection, CollectionRow, NotionRenderer } from 'react-notion-x'
 
 const notion = new NotionAPI();
 
@@ -24,6 +24,14 @@ export const getStaticProps = async (context) => {
 }
 
 
-export default ({ recordMap }) => (
-  <NotionRenderer recordMap={recordMap} fullPage={true} darkMode={false} />
+export default ({ recordMap }) => (  <NotionRenderer
+  recordMap={recordMap}
+  fullPage={true}
+  darkMode={false}
+  rootDomain='localhost:9090' // used to detect root domain links and open this in the same tab
+  components={{
+    collection: Collection,
+    collectionRow: CollectionRow,
+  }}  
+/>
 )
