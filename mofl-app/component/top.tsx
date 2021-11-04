@@ -37,14 +37,14 @@ export default function Top() {
             <li>
               <Link href="/notion">CAREER</Link>
             </li>
-            <li
+            {/*<li
               onClick={function (e) {
                 alert("준비중");
                 e.preventDefault();
               }}
             >
               <Link href="/">BLOG</Link>
-            </li>
+            </li>*/}
             {/*<li>
               <Link href="/contact">CONTACT</Link>
             </li>*/}
@@ -52,16 +52,8 @@ export default function Top() {
         </Nav>
       </Container>
       
-      <Hiring id="hiring">
       
-    <div>
-    <a href="https://www.notion.so/Job-Description-e9b85447e6e14000b492dc84384bbb3b">
-      <h1>We are Hiring</h1>
-      <p>Join our team and make the world with "sustainable &amp; optimized economy" &nbsp; →</p>
-    </a>
-      <span onClick={ontoggle}>X</span>
-      </div>
-  </Hiring>
+
     </Header>
   );
 }

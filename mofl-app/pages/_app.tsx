@@ -1,4 +1,4 @@
-import Top from "../component/top";
+
 import Footer from "../component/footer";
 import { GlobalStyle } from "../styles/globals";
 import Head from "next/head";
@@ -16,7 +16,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="description" content="AI-based Economics Solving Firm" />
       </Head>
       <GlobalStyle />
-      <Top />
       <Component {...pageProps} />
       <Footer />
     </Provider>

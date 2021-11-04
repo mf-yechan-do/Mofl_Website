@@ -11,17 +11,11 @@ export default class Intro extends Component {
         <div style={{backgroundColor: "rgb(28 48 92)"}}>
       <Video   style={{ paddingTop: "200px"}}
      width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/1page.mp4" type="video/mp4"/>
+      <source src="/images/1pages.mp4" type="video/mp4"/>
       </Video>
       <Video  
      width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/2page.mp4" type="video/mp4"/>
-      </Video> <Video  
-     width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/3page.mp4" type="video/mp4"/>
-      </Video> <Video   style={{ paddingBottom: "200px"}}
-     width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/4page.mp4" type="video/mp4"/>
+      <source src="/images/3pages.mp4" type="video/mp4"/>
       </Video>
       </div>
       <Section>
@@ -38,7 +32,7 @@ export default class Intro extends Component {
                   src="/images/why-choose.png"
                   alt="mockup"
                   width={448}
-                  height={348}
+                  height={337}
                   layout="intrinsic"
                 />
                 </div>

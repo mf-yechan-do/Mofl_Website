@@ -13,6 +13,9 @@ export const GlobalStyle = createGlobalStyle`
 
 .notion-page {
   width: 900px !important;
+} 
+.notion-page-cover {
+  min-height: 450px;
 }
 html,
 body {
@@ -57,8 +60,7 @@ a {
 ul, li {
   margin: 0;
   padding: 0;
-  list-style: none;
-}
+  }
 .about-list {
   margin-top: 30px;
 }
