@@ -16,6 +16,7 @@ export const GlobalStyle = createGlobalStyle`
 } 
 .notion-page-cover {
   min-height: 450px;
+  min-width: 1920px;
 }
 html,
 body {

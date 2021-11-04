@@ -25,8 +25,7 @@ export const getStaticProps = async (context) => {
   }
 }
 
-
-export default ({ recordMap }) => (  
+const NotionX = ({ recordMap }) => (  
 <div><Top />
 <NotionRenderer
   components={{
@@ -51,7 +50,7 @@ export default ({ recordMap }) => (
       shallow={shallow}
       locale={locale}
       >
-      <a {...props}/>
+      <a {...props} target="_blank" />
       </Link>
       ),
     collection: Collection,
@@ -62,3 +61,6 @@ export default ({ recordMap }) => (
   darkMode={false}  
 /></div>
 )
+
+
+export default NotionX;
