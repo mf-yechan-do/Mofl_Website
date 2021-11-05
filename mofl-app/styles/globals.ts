@@ -1,9 +1,11 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 export const Container = styled.div`
-  width: 1180px;
   margin: 0 auto;
   position: relative;
+  width: 100%;
+  max-width: 1280px;
+  padding: 0px 50px;
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -11,16 +13,18 @@ export const GlobalStyle = createGlobalStyle`
   box-sizing: border-box;
 }
 
-.notion-page {
-  width: 900px !important;
+.notion-page { 
+  width: 100%;
+  max-width: 1000px;
+  padding: 120px 50px;
 } 
 .notion-page-cover {
   min-height: 450px;
-  min-width: 1920px;
+/*  min-width: 1920px;*/
 }
 html,
 body {    
-  min-width: 1280px;
+  width: 100%;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;

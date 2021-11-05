@@ -59,7 +59,7 @@ export default function HomeTop() {
       <h1>We are Hiring</h1>
       <p>Join our team and make the world with "sustainable &amp; optimized economy" &nbsp; →</p>
     </a>
-      <span onClick={ontoggle}>X</span>
+      {/*<span onClick={ontoggle}>X</span>*/}
       </div>
       
   </Hiring>
@@ -120,7 +120,7 @@ const Header = styled.header`
 `;
 const Nav = styled.nav`
   position: absolute;
-  right: 0;
+  right: 50px;
   top: 0;
   display: flex;
   height: 57px;

@@ -49,14 +49,12 @@ export default function Top() {
               <Link href="/contact">CONTACT</Link>
             </li>*/}
           </ul>
-        </Nav>
+        </Nav> 
       </Container>
-      
-      
-
     </Header>
   );
 }
+
 
 
  const Hiring = styled.section`
@@ -68,7 +66,7 @@ background-color: #49597d;
 padding: 20px 0px; 
 
 div {
-  width: 1180px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -111,7 +109,7 @@ const Header = styled.header`
 `;
 const Nav = styled.nav`
   position: absolute;
-  right: 0;
+  right: 50px;
   top: 0;
   display: flex;
   height: 57px;
