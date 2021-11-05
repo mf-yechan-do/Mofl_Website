@@ -69,7 +69,7 @@ const FooterBox = styled.footer`
   align-items: center;
   width: 100%;
   padding: 60px 0;
-  background-color: #1b305c;
+  background-color: #d2a75d;
   text-align: center;
   color: #fff;
   h1 {

@@ -24,16 +24,28 @@ export default class Banner extends Component<Props> {
             “Your cost will be reduced by p% if you use our product”
           </h6>
         </Content>
+        <div>
+      <Video
+     width="1180" height="auto" autoPlay muted loop  >
+      <source src="/images/1pages.mp4" type="video/mp4"/>
+      </Video>
+      <Video  
+     width="1180" height="auto" autoPlay muted loop  >
+      <source src="/images/3pages.mp4" type="video/mp4"/>
+      </Video>
+      </div>
       </Background>
     );
   }
 }
 
+const Video = styled.video`
+display: block;
+margin: 0 auto;
+`;
 const Background = styled.div`
-  height: 788px;
   text-align: center;
   background-color: #1b305c;
-  background-image: url(/images/background.png);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: contain;
@@ -42,7 +54,7 @@ const Background = styled.div`
   margin: 0px;
 `;
 const Content = styled.div`
-  padding: 250px 0px 180px;
+  padding: 250px 0px 50px;
   width: 1180px;
   margin: auto;
   text-align: left;

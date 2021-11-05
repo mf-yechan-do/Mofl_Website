@@ -19,8 +19,8 @@ export const GlobalStyle = createGlobalStyle`
   min-width: 1920px;
 }
 html,
-body {
-  min-width: 1180px;
+body {    
+  min-width: 1280px;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;

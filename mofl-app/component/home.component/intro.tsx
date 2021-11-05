@@ -8,18 +8,10 @@ export default class Intro extends Component {
     return (
       <div>
         
-        <div style={{backgroundColor: "rgb(28 48 92)"}}>
-      <Video   style={{ paddingTop: "200px"}}
-     width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/1pages.mp4" type="video/mp4"/>
-      </Video>
-      <Video  
-     width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/3pages.mp4" type="video/mp4"/>
-      </Video>
-      </div>
+        
       <Section>
         <Container>
+                <H5>SERVICE</H5>
           <Title as="h4" css="color: #000;">
           We provide comprehensive AI platforms that supports critical<br></br>
            decisions​​ from demand forecast to supply optimization​
@@ -109,13 +101,16 @@ export default class Intro extends Component {
   }
 }
 
-const Video = styled.video`
-display: block;
-margin: 0 auto;
-padding: 100px 0px;
-`;
+const H5 = styled.h5`
+text-align: center;
+  margin: 0px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: #635cdb;
+  `;
+
 const Section = styled.section`
-  padding: 90px 0px 130px 0px;
+  padding: 100px 0px 140px 0px;
 `;
 
 const Title = styled.div`
@@ -155,8 +150,20 @@ const Item = styled.div`
     position: relative;
     margin-bottom: 20px;
   }
+
+  > div h5:before {
+    position: absolute;
+    left: 0px;
+    top: 17px;
+    content: "";
+    bottom: 0px;
+    background: #000;
+    width: 50px;
+    height: 2px;
+  }
+  
   h4 {
-    color: #635cdb;
+    color: rgb(210, 167, 93);de
     margin-bottom: 20px;
   }
   h5 {
@@ -165,6 +172,7 @@ const Item = styled.div`
     position: relative;
     margin: 0;
     font-weight: 500;
+    padding-left: 60px;
   }
   p {
     color: #788487;
