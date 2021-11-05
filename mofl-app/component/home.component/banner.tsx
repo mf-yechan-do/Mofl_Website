@@ -26,11 +26,11 @@ export default class Banner extends Component<Props> {
         </Content>
         <div>
       <Video
-     width="1180" height="auto" autoPlay muted loop  >
+      height="auto" autoPlay muted loop  >
       <source src="/images/1pages.mp4" type="video/mp4"/>
       </Video>
       <Video  
-     width="1180" height="auto" autoPlay muted loop  >
+      height="auto" autoPlay muted loop  >
       <source src="/images/3pages.mp4" type="video/mp4"/>
       </Video>
       </div>
@@ -42,6 +42,8 @@ export default class Banner extends Component<Props> {
 const Video = styled.video`
 display: block;
 margin: 0 auto;
+width: 100%;
+max-width: 1180px;
 `;
 const Background = styled.div`
   text-align: center;
@@ -54,10 +56,11 @@ const Background = styled.div`
   margin: 0px;
 `;
 const Content = styled.div`
-  padding: 250px 0px 50px;
-  width: 1180px;
-  margin: auto;
-  text-align: left;
+width: 100%;
+    max-width: 1280px;
+    text-align: left;
+    padding: 250px 50px 50px 50px;
+    margin: 0 auto;
   h1 {
     color: #eeeeee;
     font-weight: 700;

@@ -55,11 +55,13 @@ export default function HomeTop() {
       <Hiring id="hiring">
       
     <div>
+      <Blank>
     <a href="/notion">
       <h1>We are Hiring</h1>
       <p>Join our team and make the world with "sustainable &amp; optimized economy" &nbsp; →</p>
     </a>
       {/*<span onClick={ontoggle}>X</span>*/}
+      </Blank>
       </div>
       
   </Hiring>
@@ -67,6 +69,9 @@ export default function HomeTop() {
   );
 }
 
+const Blank = styled.div`
+  padding: 0px 50px;
+`;
 
  const Hiring = styled.section`
 position: absolute;
@@ -77,7 +82,7 @@ background-color: #49597d;
 padding: 20px 0px; 
 
 div {
-  width: 1180px;
+  max-width: 1280px;
   margin: 0 auto;
   position: relative;
 }
@@ -95,18 +100,14 @@ span {
 
 h1 {
   color: rgb(40,242,245);
-  width: 850px;
   margin: 0px;
   font-weight: bold;
   font-size: 1.25em;
-  display: inline-block;
 }
 p {
   color: #fff;
-  width: 850px;
   margin: 0px;
   font-size: 1.2em;
-  display: inline-block;
 }
 `;
 

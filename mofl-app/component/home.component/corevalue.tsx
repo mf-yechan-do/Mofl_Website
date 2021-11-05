@@ -8,32 +8,26 @@ type Props = {
 };
 @inject("store")
 @observer
-export default class CoreValue extends Component<Props> {
+export default class Banner extends Component<Props> {
   render() {
     return (
       <Background>
         <Content>
-          <p>AI-Based Economics Solving Firm</p>
-          <h1>
-          We optimize :<br></br>
-          "The best certainty out of the extreme uncertainty“​<br></br>
-          via time-series forecasting​
-          </h1>
+          <h5>CORE VALUE</h5>
+          <h4>
+          Improving Client’s Business instantly is our top priority </h4>
           <h6>
-            Demand &amp; supply optimization<br></br>*Tackling Inefficiency :
-            “Your cost will be reduced by p% if you use our product”
+          Providing instant and unique value to users with the state-of-the-art AI is our first mission.
+          <br></br>
+          The better the AI, the better the business decision.
           </h6>
+
+          <p>Perfect Fit For The Client
+          Sustainable & Optimized Value Chain
+          Keep Advancing, Stay Ahead Of The Market
+
+</p>
         </Content>
-        <div>
-      <Video
-     width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/1pages.mp4" type="video/mp4"/>
-      </Video>
-      <Video  
-     width="1180" height="auto" autoPlay muted loop  >
-      <source src="/images/3pages.mp4" type="video/mp4"/>
-      </Video>
-      </div>
       </Background>
     );
   }
@@ -47,7 +41,6 @@ const Background = styled.div`
   text-align: center;
   background-color: #1b305c;
   background-position: right bottom;
-  background-images: "/images/background.png";
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
@@ -55,11 +48,12 @@ const Background = styled.div`
   margin: 0px;
 `;
 const Content = styled.div`
-  padding: 250px 0px 50px;
-  width: 1180px;
-  margin: auto;
-  text-align: left;
-  h1 {
+width: 100%;
+    max-width: 1280px;
+    text-align: left;
+    padding: 250px 50px 0px 50px;
+    margin: 0 auto;
+  h4 {
     color: #eeeeee;
     font-weight: 700;
     line-height: 50px;
