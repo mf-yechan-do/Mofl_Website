@@ -64,8 +64,6 @@ export default function Footer() {
 }
 
 const FooterBox = styled.footer`
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 60px 0;
@@ -93,18 +91,24 @@ const Level = styled.div`
 
 `;
 const Flex = styled.div`
-  display: flex;
+  
+display: flex;
+flex-wrap: wrap;
   justify-content: space-between;
   width: 100%;
-  max-width: 1180px;.
-  
+  max-width: 1180px;
+
+  @media screen and (max-width: 870px) { }
+
+  div {
+    flex-basis: 380px;
+    flex-grow: 0;
+  }
 span {
   font-weight: 700;
 }
   p {
     line-height: 19px;    
-    width: 380px
-;
   }
 
 `;
