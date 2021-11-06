@@ -106,7 +106,7 @@ text-align: center;
   margin: 0px;
   text-transform: uppercase;
   line-height: 24px;
-  color: #635cdb;
+  color: rgb(210,167,93);
   `;
 
 const Section = styled.section`

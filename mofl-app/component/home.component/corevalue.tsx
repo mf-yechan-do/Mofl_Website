@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Image from "next/image";
 import styled from "styled-components";
 import { inject, observer } from "mobx-react";
 import { IStore } from "../../store";
@@ -13,7 +14,7 @@ export default class Banner extends Component<Props> {
     return (
       <Background>
         <Content>
-          <h5>CORE VALUE</h5>
+          <H5>CORE VALUE</H5>
           <h4>
           Improving Client’s Business instantly is our top priority </h4>
           <h6>
@@ -21,42 +22,80 @@ export default class Banner extends Component<Props> {
           <br></br>
           The better the AI, the better the business decision.
           </h6>
-
-          <p>Perfect Fit For The Client
-          Sustainable & Optimized Value Chain
-          Keep Advancing, Stay Ahead Of The Market
-
-</p>
+<Ul>
+<li>
+                    <Image
+                      src="/images/list_check.svg"
+                      alt="mofl logo"
+                      width={16}
+                      height={16}
+                    />
+                    <h5>Perfect Fit For The Client</h5>
+                  </li>
+                  <li>
+                    <Image
+                      src="/images/list_check.svg"
+                      alt="mofl logo"
+                      width={16}
+                      height={16}
+                    />
+                    <h5>Sustainable & Optimized Value Chain</h5>
+                  </li>
+                  <li>
+                    <Image
+                      src="/images/list_check.svg"
+                      alt="mofl logo"
+                      width={16}
+                      height={16}
+                    />
+                    <h5>Keep Advancing, Stay Ahead Of The Market</h5>
+                  </li>
+                  </Ul>
         </Content>
       </Background>
     );
   }
 }
 
-const Video = styled.video`
-display: block;
-margin: 0 auto;
-`;
 const Background = styled.div`
   text-align: center;
   background-color: #1b305c;
   background-position: right bottom;
+  background-image: url(/images/background.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   padding: 0px;
   margin: 0px;
 `;
+const Ul = styled.ul`
+  list-style:none;
+  h5 {
+    color: #ffffff;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+  }
+  `;
+
+const H5 = styled.h5`
+  margin: 0px;
+  text-transform: uppercase;
+  line-height: 24px;
+  color: rgb(210,167,93);
+  `;
+
 const Content = styled.div`
+padding 100px 0px;
 width: 100%;
     max-width: 1280px;
     text-align: left;
-    padding: 250px 50px 0px 50px;
     margin: 0 auto;
   h4 {
     color: #eeeeee;
     font-weight: 700;
     line-height: 50px;
+    margin-bottom: 0px;
   }
   p {
     font-weight: 400;
