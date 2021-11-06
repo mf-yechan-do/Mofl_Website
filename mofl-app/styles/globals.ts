@@ -12,7 +12,9 @@ export const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
 }
-
+.notion-list-item {
+  flex-wrap: wrap;
+}
 .notion-page { 
   width: 100%;
   max-width: 1000px;

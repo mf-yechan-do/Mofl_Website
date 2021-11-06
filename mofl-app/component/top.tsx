@@ -8,8 +8,9 @@ import styled from "styled-components";
     document.getElementById("hiring").style.display ="none";
   }
 
-export default function Top() {
+export default function HomeTop() {
   return (
+    <>
     <Header>
       <Container>
         <Link href="/">
@@ -49,13 +50,18 @@ export default function Top() {
               <Link href="/contact">CONTACT</Link>
             </li>*/}
           </ul>
-        </Nav> 
+        </Nav>
       </Container>
     </Header>
+      
+      
+  </>
   );
 }
 
-
+const Blank = styled.div`
+  padding: 0px 30px;
+`;
 
  const Hiring = styled.section`
 position: absolute;
@@ -65,8 +71,9 @@ width: 100%;
 background-color: #49597d;
 padding: 20px 0px; 
 
+z-index: 100;
 div {
-  width: 100%;
+  max-width: 1240px;
   margin: 0 auto;
   position: relative;
 }
@@ -77,25 +84,21 @@ span {
   font-size: 1.6em;
   top: 13px;
   position: absolute;
-  right: 0px;
+  right: 30px;
   font-weight: 300;
   cursor: pointer;
 }
 
 h1 {
   color: rgb(40,242,245);
-  width: 850px;
   margin: 0px;
   font-weight: bold;
   font-size: 1.25em;
-  display: inline-block;
 }
 p {
   color: #fff;
-  width: 850px;
   margin: 0px;
   font-size: 1.2em;
-  display: inline-block;
 }
 `;
 
@@ -109,7 +112,7 @@ const Header = styled.header`
 `;
 const Nav = styled.nav`
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 0;
   display: flex;
   height: 57px;
