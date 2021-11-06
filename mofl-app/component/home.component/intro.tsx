@@ -127,6 +127,7 @@ const MarginTop = styled.div`
   div {
     padding-top: 15px;
 }
+
 `;
 const Right = styled.div`
   -ms-flex: 0 0 55%;
@@ -135,20 +136,34 @@ const Right = styled.div`
   position: absolute;
   right: 0px;
   top: 0px;
+
+  @media screen and (max-width: 1180px) { 
+    max-width: 100%;
+    position: unset;
+}
 `;
 const Flexbox = styled.div`
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  
+@media screen and (max-width: 1180px) { 
+    justify-content: center;
+}
 `;
 const Item = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
+  @media screen and (max-width: 1180px) { 
+    flex: 0 0 100%;
+    max-width: 100%;
+}
   > div {
     margin-top: 30px;
     position: relative;
     margin-bottom: 20px;
+    margin-left: 10px;
   }
 
   > div h5:before {

@@ -98,10 +98,11 @@ flex-wrap: wrap;
   width: 100%;
   max-width: 1180px;
 
-  @media screen and (max-width: 870px) { }
+  @media screen and (max-width: 1000px) { 
+    justify-content: center; }
 
   div {
-    flex-basis: 380px;
+    flex-basis: 300px;
     flex-grow: 0;
   }
 span {
