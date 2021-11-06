@@ -19,6 +19,11 @@ export const GlobalStyle = createGlobalStyle`
   flex-wrap: wrap;
   height: 100%;
 }
+
+.notion-property-multi_select-item {
+  margin: 5px !important;
+}
+
 .notion-page { 
   width: 100%;
   max-width: 1000px;
