@@ -16,7 +16,7 @@ export default class Banner extends Component<Props> {
         <Content>
           <H5>CORE VALUE</H5>
           <h4>
-          Improving Client’s Business instantly is our top priority </h4>
+          Improving client’s business instantly is our top priority </h4>
           <h6>
           Providing instant and unique value to users with the state-of-the-art AI is our first mission.
           <br></br>
@@ -100,8 +100,8 @@ padding 100px 30px 150px 30px;
 }
   h4 {
     color: #eeeeee;
-    font-weight: 700;
-    line-height: 50px;
+    line-height: 40px;
+    font-weight: 500;
     margin-bottom: 0px;
   }
   p {
