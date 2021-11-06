@@ -12,13 +12,17 @@ export const GlobalStyle = createGlobalStyle`
   * {
   box-sizing: border-box;
 }
+.notion-collection {
+  width:100%;
+}
 .notion-list-item {
   flex-wrap: wrap;
+  height: 100%;
 }
 .notion-page { 
   width: 100%;
   max-width: 1000px;
-  padding: 120px 50px;
+  padding: 120px 30px;
 } 
 .notion-page-cover {
   min-height: 450px;
