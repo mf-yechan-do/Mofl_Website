@@ -70,6 +70,8 @@ const Background = styled.div`
 `;
 const Ul = styled.ul`
   list-style:none;
+  line-height: 40px;
+  padding-top: 20px;
   h5 {
     color: #eeeeee;
     padding: 10px;
@@ -91,8 +93,11 @@ const Content = styled.div`
 max-width: 1240px;
 padding 100px 30px;
 width: 100%;
-    text-align: left;
-    margin: 0 auto;
+text-align: left;
+margin: 0 auto;
+@media screen and (max-width: 1000px) { 
+padding 100px 30px 150px 30px;
+}
   h4 {
     color: #eeeeee;
     font-weight: 700;
