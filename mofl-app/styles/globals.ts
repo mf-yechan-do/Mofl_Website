@@ -4,8 +4,8 @@ export const Container = styled.div`
   margin: 0 auto;
   position: relative;
   width: 100%;
-  max-width: 1280px;
-  padding: 0px 50px;
+  max-width: 1240px;
+  padding: 0px 30px;
 `;
 
 export const GlobalStyle = createGlobalStyle`
@@ -34,7 +34,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 h1 {
-  font-size: 48px;
+  font-size: 3rem;
 }
 h2 {
   font-size: 42px;

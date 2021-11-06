@@ -60,7 +60,7 @@ export default function HomeTop() {
       <h1>We are Hiring</h1>
       <p>Join our team and make the world with "sustainable &amp; optimized economy" &nbsp; →</p>
     </a>
-      {/*<span onClick={ontoggle}>X</span>*/}
+      <span onClick={ontoggle}>X</span>
       </Blank>
       </div>
       
@@ -70,7 +70,7 @@ export default function HomeTop() {
 }
 
 const Blank = styled.div`
-  padding: 0px 50px;
+  padding: 0px 30px;
 `;
 
  const Hiring = styled.section`
@@ -82,7 +82,7 @@ background-color: #49597d;
 padding: 20px 0px; 
 
 div {
-  max-width: 1280px;
+  max-width: 1;
   margin: 0 auto;
   position: relative;
 }
@@ -93,7 +93,7 @@ span {
   font-size: 1.6em;
   top: 13px;
   position: absolute;
-  right: 0px;
+  right: 30px;
   font-weight: 300;
   cursor: pointer;
 }
@@ -121,7 +121,7 @@ const Header = styled.header`
 `;
 const Nav = styled.nav`
   position: absolute;
-  right: 50px;
+  right: 30px;
   top: 0;
   display: flex;
   height: 57px;

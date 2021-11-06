@@ -57,9 +57,9 @@ const Background = styled.div`
 `;
 const Content = styled.div`
 width: 100%;
-    max-width: 1280px;
+    max-width: 1240px;
     text-align: left;
-    padding: 250px 50px 50px 50px;
+    padding: 250px 30px 50px 30px;
     margin: 0 auto;
   h1 {
     color: #eeeeee;
