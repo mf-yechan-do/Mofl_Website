@@ -10,6 +10,7 @@ import styled from "styled-components";
 
 export default function HomeTop() {
   return (
+    <>
     <Header>
       <Container>
         <Link href="/">
@@ -51,6 +52,7 @@ export default function HomeTop() {
           </ul>
         </Nav>
       </Container>
+    </Header>
       
       <Hiring id="hiring">
       
@@ -60,12 +62,12 @@ export default function HomeTop() {
       <h1>We are Hiring</h1>
       <p>Join our team and make the world with "sustainable &amp; optimized economy" &nbsp; →</p>
     </a>
-      <span onClick={ontoggle}>X</span>
+      {/*<span onClick={ontoggle}>X</span>*/}
       </Blank>
       </div>
       
   </Hiring>
-    </Header>
+  </>
   );
 }
 
@@ -81,8 +83,9 @@ width: 100%;
 background-color: #49597d;
 padding: 20px 0px; 
 
+z-index: 100;
 div {
-  max-width: 1;
+  max-width: 1240px;
   margin: 0 auto;
   position: relative;
 }

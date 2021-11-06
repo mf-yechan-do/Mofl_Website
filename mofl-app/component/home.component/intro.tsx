@@ -124,6 +124,9 @@ const Contents = styled.div`
 const MarginTop = styled.div`
   margin-top: 45px;
   
+  @media screen and (max-width: 1180px) { 
+    margin-top: 0px;
+}
   div {
     padding-top: 15px;
 }

@@ -86,9 +86,9 @@ const H5 = styled.h5`
   `;
 
 const Content = styled.div`
-padding 100px 0px;
+max-width: 1240px;
+padding 100px 30px;
 width: 100%;
-    max-width: 1280px;
     text-align: left;
     margin: 0 auto;
   h4 {
