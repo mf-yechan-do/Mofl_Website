@@ -66,7 +66,7 @@ export default function Footer() {
 const FooterBox = styled.footer`
   align-items: center;
   width: 100%;
-  padding: 60px 0;
+  padding-top: 60px;
   background-color: #d2a75d;
   text-align: center;
   color: #fff;
