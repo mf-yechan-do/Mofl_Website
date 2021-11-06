@@ -25,7 +25,7 @@ export default class Banner extends Component<Props> {
 <Ul>
 <li>
                     <Image
-                      src="/images/list_check.svg"
+                      src="/images/list_check2.svg"
                       alt="mofl logo"
                       width={16}
                       height={16}
@@ -34,7 +34,7 @@ export default class Banner extends Component<Props> {
                   </li>
                   <li>
                     <Image
-                      src="/images/list_check.svg"
+                      src="/images/list_check2.svg"
                       alt="mofl logo"
                       width={16}
                       height={16}
@@ -43,7 +43,7 @@ export default class Banner extends Component<Props> {
                   </li>
                   <li>
                     <Image
-                      src="/images/list_check.svg"
+                      src="/images/list_check2.svg"
                       alt="mofl logo"
                       width={16}
                       height={16}
@@ -61,7 +61,7 @@ const Background = styled.div`
   text-align: center;
   background-color: #1b305c;
   background-position: right bottom;
-  background-image: url(/images/background.png);
+  background-image: url(/images/background2.png);
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
