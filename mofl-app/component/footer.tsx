@@ -49,13 +49,13 @@ export default function Footer() {
               </div>
             </Flex>
         </Level>
-          <div style={{paddingTop: "100px"}}>
-            <Image
+          <div style={{padding: "60px 0px 40px 0px"}}>
+            {/*<Image
               src="/mofl_logo.png"
               alt="mofl logo"
               width={78}
               height={70}
-            />
+            />*/}
             <p style={{margin: "0px"}} >©2019 mofl Inc. All rights reserved</p>
           </div>
       </Container>

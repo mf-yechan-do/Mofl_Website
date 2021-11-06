@@ -71,10 +71,12 @@ const Background = styled.div`
 const Ul = styled.ul`
   list-style:none;
   h5 {
-    color: #ffffff;
+    color: #eeeeee;
     padding: 10px;
     margin: 0px;
     display: inline-block;
+    font-weight: 400;
+    display: inline;
   }
   `;
 

@@ -159,8 +159,12 @@ const Item = styled.div`
   flex: 0 0 50%;
   max-width: 50%;
   @media screen and (max-width: 1180px) { 
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+@media screen and (max-width: 600px) { 
+  flex: 0 0 100%;
+  max-width: 100%;
 }
   > div {
     margin-top: 30px;
