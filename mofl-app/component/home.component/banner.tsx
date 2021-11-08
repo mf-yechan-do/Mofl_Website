@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { inject, observer } from "mobx-react";
 import { IStore } from "../../store";
+import {BrowserView,MobileView} from "react-device-detect";
 
 type Props = {
   store?: IStore;
@@ -25,11 +26,20 @@ export default class Banner extends Component<Props> {
           </h6>
         </Content>
         <div>
+          <BrowserView>
+      <Video style={{paddingBottom:"100px"}}
+      height="auto" autoPlay muted loop playsinline preload poster="/images/mofl_video.gif">
+      <source src="/images/mofl_video_high.webm" type="video/webm"></source>
+         <source src="/images/mofl_video_high.mp4" type="video/mp4"></source>
+      </Video>
+      </BrowserView>
+          <MobileView>
       <Video style={{paddingBottom:"100px"}}
       height="auto" autoPlay muted loop playsinline preload poster="/images/mofl_video.gif">
       <source src="/images/mofl_video.webm" type="video/webm"></source>
          <source src="/images/mofl_video.mp4" type="video/mp4"></source>
       </Video>
+      </MobileView>
       </div>
       </Background>
     );
