@@ -14,7 +14,7 @@ export default class Intro extends Component {
                 <H6>SERVICE</H6>
           <Title as="h4" css="color: #000;">
           We provide comprehensive AI solutions that support critical<br></br>
-           decisions​​ from demand forecast to supply optimization​
+           decisions​​ from demand forecast to supply optimization​.
           </Title>
           <Contents>
             <Flexbox>
@@ -38,7 +38,7 @@ export default class Intro extends Component {
                     <h5>Structure</h5>
                     <p>
                     We provide full-service from data organization to external data
-                    integration for advanced analysis
+                    integration for advanced analysis.
                     </p>
                   </div>
                 </Item>

@@ -26,10 +26,10 @@ export default class Banner extends Component<Props> {
         </Content>
         <div>
       <Video
-      height="auto" autoPlay muted loop playsinline>
+      height="auto"  muted="muted" autoplay="autoplay" loop="loop" playsinline="">
       <source src="/images/1pages.mp4" type="video/mp4"/>
       </Video>
-      <Video  
+      <Video   
       height="auto" autoPlay muted loop playsinline>
       <source src="/images/3pages.mp4" type="video/mp4"/>
       </Video>

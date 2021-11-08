@@ -16,7 +16,7 @@ export default class Banner extends Component<Props> {
         <Content>
           <H6>CORE VALUE</H6>
           <h4>
-          Improving client’s business instantly is our top priority </h4>
+          Improving client’s business instantly is our top priority. </h4>
           <h6 style={{fontSize: "15px"}}>
           Providing instant and unique value to users with the state-of-the-art AI is our first mission.
           <br></br>
