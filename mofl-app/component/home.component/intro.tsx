@@ -13,7 +13,7 @@ export default class Intro extends Component {
         <Container>
                 <H5>SERVICE</H5>
           <Title as="h4" css="color: #000;">
-          We provide comprehensive AI platforms that supports critical<br></br>
+          We provide comprehensive AI solutions that supports critical<br></br>
            decisions​​ from demand forecast to supply optimization​
           </Title>
           <Contents>

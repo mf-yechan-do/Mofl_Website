@@ -9,6 +9,7 @@ export const Container = styled.div`
 `;
 
 export const GlobalStyle = createGlobalStyle`
+
   * {
   box-sizing: border-box;
 }
@@ -41,8 +42,10 @@ body {
   line-height: 26px;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+/*  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    */
+    font-family: 'Lato', sans-serif;
 }
 h1 {
   font-size: 3rem;
