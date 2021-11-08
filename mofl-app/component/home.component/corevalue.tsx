@@ -14,10 +14,10 @@ export default class Banner extends Component<Props> {
     return (
       <Background>
         <Content>
-          <H5>CORE VALUE</H5>
+          <H6>CORE VALUE</H6>
           <h4>
           Improving client’s business instantly is our top priority </h4>
-          <h6>
+          <h6 style={{fontSize: "15px"}}>
           Providing instant and unique value to users with the state-of-the-art AI is our first mission.
           <br></br>
           The better the AI, the better the business decision.
@@ -30,7 +30,7 @@ export default class Banner extends Component<Props> {
                       width={16}
                       height={16}
                     />
-                    <h5>Perfect Fit For The Client</h5>
+                    <h6>Perfect Fit For The Client</h6>
                   </li>
                   <li>
                     <Image
@@ -39,7 +39,7 @@ export default class Banner extends Component<Props> {
                       width={16}
                       height={16}
                     />
-                    <h5>Sustainable & Optimized Value Chain</h5>
+                    <h6>Sustainable & Optimized Value Chain</h6>
                   </li>
                   <li>
                     <Image
@@ -48,7 +48,7 @@ export default class Banner extends Component<Props> {
                       width={16}
                       height={16}
                     />
-                    <h5>Keep Advancing, Stay Ahead Of The Market</h5>
+                    <h6>Keep Advancing, Stay Ahead Of The Market</h6>
                   </li>
                   </Ul>
         </Content>
@@ -71,8 +71,7 @@ const Background = styled.div`
 const Ul = styled.ul`
   list-style:none;
   line-height: 40px;
-  padding-top: 20px;
-  h5 {
+  h6 {
     color: #eeeeee;
     padding: 10px;
     margin: 0px;
@@ -80,18 +79,21 @@ const Ul = styled.ul`
     font-weight: 400;
     display: inline;
   }
+  li > div {
+    margin-bottom: -3px !important;
+  }
   `;
 
-const H5 = styled.h5`
+const H6= styled.h6`
   margin: 0px;
   text-transform: uppercase;
-  line-height: 24px;
-  color: rgb(210,167,93);
+  line-height: 24px !important;
+  color: rgb(210,167,93) !important;
   `;
 
 const Content = styled.div`
 max-width: 1240px;
-padding 100px 30px;
+padding 90px 30px;
 width: 100%;
 text-align: left;
 margin: 0 auto;
@@ -101,8 +103,9 @@ padding 100px 30px 150px 30px;
   h4 {
     color: #eeeeee;
     line-height: 40px;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 0px;
+    margin-top: 20px;
   }
   p {
     font-weight: 400;

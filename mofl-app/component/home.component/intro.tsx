@@ -11,7 +11,7 @@ export default class Intro extends Component {
         
       <Section>
         <Container>
-                <H5>SERVICE</H5>
+                <H6>SERVICE</H6>
           <Title as="h4" css="color: #000;">
           We provide comprehensive AI solutions that supports critical<br></br>
            decisions​​ from demand forecast to supply optimization​
@@ -101,12 +101,13 @@ export default class Intro extends Component {
   }
 }
 
-const H5 = styled.h5`
+const H6 = styled.h6`
 text-align: center;
   margin: 0px;
   text-transform: uppercase;
   line-height: 24px;
   color: rgb(210,167,93);
+  font-size: 18px;
   `;
 
 const Section = styled.section`
@@ -115,14 +116,15 @@ const Section = styled.section`
 
 const Title = styled.div`
   text-align: center;
-  margin: 40px auto 60px;
+  margin: 20px auto 60px;
   line-height: 40px;
+  font-size:30px;
 `;
 const Contents = styled.div`
   position: relative;
 `;
 const MarginTop = styled.div`
-  margin-top: 45px;
+  margin-top: 25px;
   
   @media screen and (max-width: 1180px) { 
     margin-top: 0px;
@@ -185,16 +187,17 @@ const Item = styled.div`
   }
   
   h4 {
-    color: rgb(210, 167, 93);de
-    margin-bottom: 20px;
+    color: rgb(210, 167, 93);
+    margin-bottom: 5px;
   }
   h5 {
     text-transform: uppercase;
     margin-bottom: 15px;
     position: relative;
     margin: 0;
-    font-weight: 500;
+    font-weight: 700;
     padding-left: 60px;
+    margin-bottom: 15px;
   }
   p {
     color: #788487;

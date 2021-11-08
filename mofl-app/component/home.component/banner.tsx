@@ -78,5 +78,6 @@ width: 100%;
     margin: 20px 0px;
     color: #eee;
     line-height: 30px;
+    font-size:18px;
   }
 `;
