@@ -26,8 +26,9 @@ export default class Banner extends Component<Props> {
         </Content>
         <div>
       <Video style={{paddingBottom:"180px"}}
-      height="auto" autoPlay muted loop playsinline preload="auto" poster="/images/mofl_video.jpg">
-      <source src="/images/mofl_video.mp4" type="video/mp4"/>
+      height="auto" autoPlay muted loop playsinline preload poster="/images/mofl_video.jpg">
+        <source src="/images/mofl_video.webm" type="video/webm"></source>
+      <source src="/images/mofl_video.mp4" type="video/mp4"></source>
       </Video>
       </div>
       </Background>
