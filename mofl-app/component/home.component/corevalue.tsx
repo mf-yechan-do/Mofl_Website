@@ -93,12 +93,12 @@ const H6= styled.h6`
 
 const Content = styled.div`
 max-width: 1240px;
-padding 90px 30px;
+padding 110px 30px;
 width: 100%;
 text-align: left;
 margin: 0 auto;
 @media screen and (max-width: 1000px) { 
-padding 100px 30px 150px 30px;
+padding 100px 30px 160px 30px;
 }
   h4 {
     color: #eeeeee;
