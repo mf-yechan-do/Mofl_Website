@@ -26,11 +26,11 @@ export default class Banner extends Component<Props> {
         </Content>
         <div>
       <Video
-      height="auto" autoPlay muted loop playsinline >
+      height="auto" autoPlay muted="muted" loop playsinline >
       <source src="/images/1pages.mp4" type="video/mp4"/>
       </Video>
       <Video  
-      height="auto" autoPlay muted loop playsinline >
+      height="auto" autoPlay muted="muted"  loop playsinline >
       <source src="/images/3pages.mp4" type="video/mp4"/>
       </Video>
       </div>
@@ -64,7 +64,7 @@ width: 100%;
   h1 {
     color: #eeeeee;
     font-weight: 700;
-    line-height: 50px;
+    line-height: 60px;
   }
   p {
     font-weight: 400;
