@@ -13,7 +13,7 @@ export default class Intro extends Component {
         <Container>
                 <H6>SERVICE</H6>
           <Title as="h4" css="color: #000;">
-          We provide comprehensive AI solutions that supports critical<br></br>
+          We provide comprehensive AI solutions that support critical<br></br>
            decisions​​ from demand forecast to supply optimization​
           </Title>
           <Contents>
@@ -47,7 +47,7 @@ export default class Intro extends Component {
                     <h4>02.</h4>
                     <h5>Preciseness</h5>
                     <p>
-                    Running data consistency check thoroughly and cleanse &amp; 
+                    Run data consistency check thoroughly and cleanse &amp; 
                     impute data based on the client’s goal.
                     </p>
                   </div>
@@ -67,7 +67,7 @@ export default class Intro extends Component {
                     <h5>Application</h5>
                     <p>
                     We suggest the best fit demand-supply optimization for our 
-                    clients ; From inventory to promotion.
+                    clients: From inventory to promotion.
                     </p>
                   </div>
                 </Item>
