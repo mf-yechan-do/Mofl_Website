@@ -54,7 +54,7 @@ display: none;
 const Mobile = styled.div`
 display: none;
 @media screen and (max-width: 720px) { 
-display: ;block
+display: block;
 }
 `;
 const Video = styled.video`
