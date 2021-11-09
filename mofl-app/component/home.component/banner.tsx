@@ -51,6 +51,9 @@ export default class Banner extends Component<Props> {
           return (
           <>
           <p>isPc</p>
+          <Video style={{paddingBottom:"100px"}} src="/images/mofl_video_high.mp4"
+          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
+          </Video>
           </>
           )
         }
