@@ -42,9 +42,8 @@ export default class Banner extends Component<Props> {
           return (
           <>
           <p>isMoblie</p>
-          <Video style={{paddingBottom:"100px"}}
-          height="auto" autoPlay muted loop poster="/images/mofl_video.gif">
-             <source src="/images/mofl_video_high_720_3~6.mp4" type="video/mp4"></source>
+          <Video style={{paddingBottom:"100px"}} src="/images/mofl_video_high_720_3~6.mp4"
+          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
           </>
           )
@@ -52,9 +51,8 @@ export default class Banner extends Component<Props> {
           return (
           <>
           <p>isPc</p>
-          <Video style={{paddingBottom:"100px"}}
-          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
-             <source src="/images/mofl_video_high.mp4" type="video/mp4"></source>
+          <Video style={{paddingBottom:"100px"}} src="/images/mofl_video_high.mp4"
+          height="auto" autoPlay muted loop  poster="/images/mofl_video.gif">
           </Video>
           </>
           )
