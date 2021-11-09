@@ -26,24 +26,37 @@ export default class Banner extends Component<Props> {
           </h6>
         </Content>
         <div>
-          <BrowserView>
+          <Pc>
       <Video style={{paddingBottom:"100px"}}
       height="auto" autoPlay muted loop poster="/images/mofl_video.gif">
          <source src="/images/mofl_video_high.mp4" type="video/mp4"></source>
       </Video>
-      </BrowserView>
-          <MobileView>
+      </Pc>
+          <Mobile>
       <Video style={{paddingBottom:"100px"}}
       height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
          <source src="/images/mofl_video_high_720_3~6.mp4" type="video/mp4"></source>
       </Video>
-      </MobileView>
+      </Mobile>
       </div>
       </Background>
     );
   }
 }
 
+const Pc = styled.div`
+display: block;
+@media screen and (max-width: 720px) { 
+display: none;
+}
+`;
+
+const Mobile = styled.div`
+display: none;
+@media screen and (max-width: 720px) { 
+display: ;block
+}
+`;
 const Video = styled.video`
 display: block;
 margin: 0 auto;
