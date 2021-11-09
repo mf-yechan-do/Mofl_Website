@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { inject, observer } from "mobx-react";
 import { IStore } from "../../store";
-import {BrowserView,MobileView,isMobile} from "react-device-detect";
+import {BrowserView,MobileView,isMobile,isAndroid, isIOS} from "react-device-detect";
 
 type Props = {
   store?: IStore;
@@ -38,19 +38,22 @@ export default class Banner extends Component<Props> {
           </BrowserView>
 
       {(() => {
-        if (isMobile) {
+        if (isMobile && isAndroid) {
           return (
           <>
-          <p>isMoblie</p>
+          <p>Android</p>
           <Video style={{paddingBottom:"100px"}} src="/images/mofl_720.mp4"
           height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
+          </>
+          )
+        } else if(isMobile && isIOS) {
+          <>
           <p>IOS</p>
           <Video style={{paddingBottom:"100px"}} src="https://www.w3schools.com/htmL/mov_bbb.mp4"
           height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
           </>
-          )
         }
       })()}
       </div>
