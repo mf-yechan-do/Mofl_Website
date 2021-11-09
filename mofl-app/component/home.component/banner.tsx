@@ -47,7 +47,7 @@ export default class Banner extends Component<Props> {
           </Video>
           </>
           )
-        } else if(isIOS) {
+        } else {
           <>
           <p>IOS</p>
           <Video style={{paddingBottom:"100px"}} src="https://www.w3schools.com/htmL/mov_bbb.mp4"
