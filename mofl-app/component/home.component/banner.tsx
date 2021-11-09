@@ -41,9 +41,9 @@ export default class Banner extends Component<Props> {
         if (isMobile) {
           return (
           <>
-          <p>Pc</p>
+          <p>isMoblie</p>
           <Video style={{paddingBottom:"100px"}}
-          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
+          height="auto" autoPlay muted loop poster="/images/mofl_video.gif">
              <source src="/images/mofl_video_high_720_3~6.mp4" type="video/mp4"></source>
           </Video>
           </>
@@ -51,9 +51,9 @@ export default class Banner extends Component<Props> {
         } else {
           return (
           <>
-          <p>Moblie</p>
+          <p>isPc</p>
           <Video style={{paddingBottom:"100px"}}
-          height="auto" autoPlay muted loop poster="/images/mofl_video.gif">
+          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
              <source src="/images/mofl_video_high.mp4" type="video/mp4"></source>
           </Video>
           </>
