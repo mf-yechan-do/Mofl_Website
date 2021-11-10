@@ -7,7 +7,6 @@ import {BrowserView,MobileView,isMobile,isAndroid, isIOS} from "react-device-det
 
 
 
-const ref = useRef<HTMLVideoElement>(null);
 
 type Props = {
   store?: IStore;
@@ -59,14 +58,6 @@ export default class Banner extends Component<Props> {
           <p>Android</p>
           <video
         loop={true}
-        muted={true}
-        playsInline={true}
-      >
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-      </video>
-          <video
-        loop={true}
-        ref={ref}
         muted={true}
         playsInline={true}
       >
