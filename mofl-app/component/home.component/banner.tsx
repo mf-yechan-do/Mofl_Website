@@ -44,7 +44,7 @@ export default class Banner extends Component<Props> {
           return (
           <>
           <p>Android</p>
-          <Video  >
+          <Video controls  >
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
           </Video>
           <Video  playsinline>
