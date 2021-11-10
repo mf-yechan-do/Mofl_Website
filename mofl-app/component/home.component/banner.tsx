@@ -44,8 +44,21 @@ export default class Banner extends Component<Props> {
           return (
           <>
           <p>Android</p>
-          <Video playsinline="playsinline" autoPlay="autoPlay" muted="muted" loop="loop" style={{paddingBottom:"100px"}} src="/images/mofl_720.mp4"
-          height="auto"   poster="/images/mofl_video.gif">
+          <Video  >
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
+          </Video>
+          <Video  playsinline>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
+          </Video>
+          <Video  autoPlay >
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
+          </Video>
+          <Video playsinline muted>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
+          </Video>
+          
+          <Video playsinline="playsinline" autoPlay="autoPlay" muted="muted" loop="loop" style={{paddingBottom:"100px"}} src="https://www.w3schools.com/html/mov_bbb.mp4"
+          height="auto" >
           </Video>
           </>
           )
