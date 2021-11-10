@@ -62,7 +62,7 @@ export default class Banner extends Component<Props> {
         loop={true}
         muted={true}
         playsInline={true}
-        autoPlay
+        autoPlay={true}
         poster="/images/mofl_video.jpg"
       >
         <source src="/images/mofl_720.mp4" type="video/mp4" />
