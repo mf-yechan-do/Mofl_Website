@@ -47,17 +47,17 @@ export default class Banner extends Component<Props> {
           <Video controls  >
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
           </Video>
-          <Video  playsinline>
+          <Video  playsinline controls>
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
           </Video>
-          <Video  autoPlay >
+          <Video  autoPlay controls >
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
           </Video>
-          <Video playsinline muted>
+          <Video playsinline muted controls>
             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
           </Video>
           
-          <Video playsinline="playsinline" autoPlay="autoPlay" muted="muted" loop="loop" style={{paddingBottom:"100px"}} src="https://www.w3schools.com/html/mov_bbb.mp4"
+          <Video playsinline="playsinline" autoPlay="autoPlay" muted="muted" loop="loop" controls style={{paddingBottom:"100px"}} src="https://www.w3schools.com/html/mov_bbb.mp4"
           height="auto" >
           </Video>
           </>
