@@ -57,32 +57,17 @@ export default class Banner extends Component<Props> {
           <>
           <p>ios</p>
           memo
-          <video
+          <Video
+          style={{paddingBottom:"100px"}}
         loop={true}
         muted={true}
         playsInline={true}
+        autoPlay
+        poster="/images/mofl_video.jpg"
       >
-        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
-      </video>
-          <Video controls preload autoplay muted={"muted"} loop playsinline={"playsinline"} >
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
-          </Video>
-          <Video controls preload autoplay muted loop playsinline >
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
-          </Video>
-          <Video  playsinline controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
-          </Video>
-          <Video  autoPlay controls >
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
-          </Video>
-          <Video playsinline muted controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"></source>
-          </Video>
-          
-          <Video playsinline autoPlay="autoPlay" muted="muted" loop="loop" controls style={{paddingBottom:"100px"}} src="https://www.w3schools.com/html/mov_bbb.mp4"
-          height="auto" >
-          </Video>
+        <source src="/images/mofl_720.mp4" type="video/mp4" />
+      </Video>
+
           </>
           )
         }
