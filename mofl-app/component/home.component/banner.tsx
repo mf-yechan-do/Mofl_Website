@@ -41,7 +41,19 @@ export default class Banner extends Component<Props> {
           height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
           </BrowserView>
-      {(() => {  if (isMobile) {
+      {(() => {  if (isMobile && isAndroid) {
+          return (
+          <>
+          <Video style={{paddingBottom:"100px"}} src="/images/mofl_720.mp4"
+          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
+          </Video>
+          </>
+          )
+        }
+        
+      
+      })()}
+   {(() => {  if (isMobile && isIOS) {
           return (
           <>
           <p>Android</p>
@@ -85,8 +97,6 @@ export default class Banner extends Component<Props> {
         
       
       })()}
-      {
-}
       </div>
       </Background>
     );
