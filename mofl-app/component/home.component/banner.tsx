@@ -40,34 +40,19 @@ export default class Banner extends Component<Props> {
           height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
           </BrowserView>
-      {(() => {  if (isMobile && isAndroid) {
+      {(() => {  if (isMobile) {
           return (
           <>
-          <Video style={{paddingBottom:"100px"}} src="/images/mofl_720.mp4"
-          height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
-          </Video>
-          </>
-          )
-        }
-        
-      
-      })()}
-   {(() => {  if (isMobile && isIOS) {
-          return (
-          <>
-          <p>ios</p>
-          memo
           <Video
           style={{paddingBottom:"100px"}}
         loop={true}
         muted={true}
         playsInline={true}
         autoPlay={true}
-        poster="/images/mofl_video.jpg"
+        poster="/images/mofl_video.gif"
       >
         <source src="/images/mofl_720.mp4" type="video/mp4" />
       </Video>
-
           </>
           )
         }
