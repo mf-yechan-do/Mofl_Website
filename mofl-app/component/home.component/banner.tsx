@@ -55,7 +55,8 @@ export default class Banner extends Component<Props> {
    {(() => {  if (isMobile && isIOS) {
           return (
           <>
-          <p>Android</p>
+          <p>ios</p>
+          memo
           <video
         loop={true}
         muted={true}
