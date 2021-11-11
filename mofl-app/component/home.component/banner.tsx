@@ -35,7 +35,6 @@ export default class Banner extends Component<Props> {
           <Mobile>
       </Mobile>
       <BrowserView>
-          <p>Pc</p>
           <Video style={{paddingBottom:"100px"}} src="/images/mofl1180.mp4"
           height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
