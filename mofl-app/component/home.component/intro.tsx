@@ -13,7 +13,7 @@ export default class Intro extends Component {
         <Container>
                 <H6>SERVICE</H6>
           <Title as="h4" css="color: #000;">
-          We provide comprehensive AI solutions that support critical<br></br>
+          We provide comprehensive AI solutions that support critical <Pc><br></br></Pc>
            decisions​​ from demand forecast to supply optimization​.
           </Title>
           <Contents>
@@ -119,6 +119,12 @@ const Section = styled.section`
   padding: 100px 0px 140px 0px;
 `;
 
+const Pc = styled.span`
+display: inline-block;;
+@media screen and (max-width: 600px) { 
+display: none;
+}
+`;
 const Title = styled.div`
   text-align: center;
   margin: 20px auto 60px;
@@ -126,6 +132,7 @@ const Title = styled.div`
   font-size:30px;
   @media screen and (max-width: 600px) { 
     text-align: left;
+    font-size:28x;
   }
 `;
 const Contents = styled.div`
