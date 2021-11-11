@@ -108,6 +108,11 @@ text-align: center;
   line-height: 24px;
   color: rgb(210,167,93);
   font-size: 18px;
+
+  
+@media screen and (max-width: 600px) { 
+  text-align: left;
+}
   `;
 
 const Section = styled.section`
@@ -119,6 +124,9 @@ const Title = styled.div`
   margin: 20px auto 60px;
   line-height: 40px;
   font-size:30px;
+  @media screen and (max-width: 600px) { 
+    text-align: left;
+  }
 `;
 const Contents = styled.div`
   position: relative;
