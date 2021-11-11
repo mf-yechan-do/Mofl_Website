@@ -104,6 +104,13 @@ width: 100%;
     font-weight: 700;
     line-height: 60px;
   }
+  
+@media screen and (max-width: 720px) { 
+  h1 {
+    font-size:36px;
+    line-height: 40px;
+  }
+  }
   p {
     font-weight: 400;
     color: #fff;
