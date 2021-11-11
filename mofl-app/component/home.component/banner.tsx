@@ -36,7 +36,7 @@ export default class Banner extends Component<Props> {
       </Mobile>
       <BrowserView>
           <p>Pc</p>
-          <Video style={{paddingBottom:"100px"}} src="/images/mofl_1180.mp4"
+          <Video style={{paddingBottom:"100px"}} src="/images/mofl1180.mp4"
           height="auto" autoPlay muted loop playsinline poster="/images/mofl_video.gif">
           </Video>
           </BrowserView>
@@ -51,7 +51,7 @@ export default class Banner extends Component<Props> {
         autoPlay={true}
         poster="/images/mofl_video.gif"
       >
-        <source src="/images/mofl_720.mp4" type="video/mp4" />
+        <source src="/images/mofl720.mp4" type="video/mp4" />
       </Video>
           </>
           )
